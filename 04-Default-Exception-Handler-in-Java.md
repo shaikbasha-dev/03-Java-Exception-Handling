@@ -1,4 +1,4 @@
-04 - Default Exception Handler in Java
+# 04 - Default Exception Handler in Java
 
 What is the Default Exception Handler?
 - Java has a built-in mechanism that handles uncaught exceptions.
