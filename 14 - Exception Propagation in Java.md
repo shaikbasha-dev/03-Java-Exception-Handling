@@ -1,8 +1,8 @@
 14 - Exception Propagation in Java
 
-============================================================
+
 1. Introduction
-============================================================
+
 Exception propagation means that when an exception occurs in one method, it is passed to the calling method if it is not handled there.
 This process continues upward through the call stack until the exception is handled or the program stops.
 
@@ -23,7 +23,7 @@ If method2 throws an exception:
 
 ------------------------------------------------------------
 3. Example Program
-============================================================
+
 Program:
 public class ExceptionPropagationExample {
     static void method1() {
@@ -31,7 +31,7 @@ public class ExceptionPropagationExample {
     }
 
     static void method2() {
-        int result = 10 / 0;
+        int result  10 / 0;
         System.out.println(result);
     }
 
@@ -63,6 +63,6 @@ Exception handled in main.
 
 ------------------------------------------------------------
 5. Conclusion
-============================================================
+
 Exception propagation is the process of passing an exception upward through the call stack.
 Understanding propagation helps developers know where to place try-catch blocks and how exceptions flow in a program.
