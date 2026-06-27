@@ -1,8 +1,8 @@
 15 - Exception Handling Best Practices in Java
 
-============================================================
+
 1. Introduction
-============================================================
+
 Exception handling is not only about catching errors.
 It is also about writing code that is clear, safe, and maintainable.
 Following best practices helps developers avoid common mistakes.
@@ -23,14 +23,14 @@ Following best practices helps developers avoid common mistakes.
 
 ------------------------------------------------------------
 3. Example of Good Practice
-============================================================
+
 Program:
 import java.io.*;
 
 public class BestPracticeExample {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
-            String line = reader.readLine();
+        try (BufferedReader reader  new BufferedReader(new FileReader("data.txt"))) {
+            String line  reader.readLine();
             System.out.println(line);
         } catch (IOException e) {
             System.out.println("Error reading file: " + e.getMessage());
@@ -45,10 +45,10 @@ Explanation:
 
 ------------------------------------------------------------
 4. Example of Bad Practice
-============================================================
+
 Program:
 try {
-    int x = 10 / 0;
+    int x  10 / 0;
 } catch (Exception e) {
     System.out.println(e);
 }
@@ -60,6 +60,6 @@ Why this is bad:
 
 ------------------------------------------------------------
 5. Summary
-============================================================
+
 Good exception handling means being specific, clear, and responsible.
 It helps preserve program stability and makes debugging easier.
