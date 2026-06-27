@@ -1,4 +1,4 @@
-01 - Introduction to Exceptions in Java
+# 01 - Introduction to Exceptions in Java
 
 What is an Exception?
 - An exception is an event that disrupts the normal flow of a program.
