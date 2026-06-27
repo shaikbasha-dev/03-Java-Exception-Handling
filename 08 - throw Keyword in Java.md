@@ -1,8 +1,8 @@
-08 - throw Keyword in Java
+# 08 - throw Keyword in Java
 
-============================================================
+
 1. Definition
-============================================================
+
 The throw keyword is used to manually throw an exception in Java.
 It is used when a program wants to stop normal execution and signal that something unexpected has happened.
 
@@ -38,7 +38,7 @@ throw new IllegalArgumentException("Invalid age");
 
 ------------------------------------------------------------
 4. Program 1: Using throw for Validation
-============================================================
+
 Headline:
 Throwing an Exception Manually
 
@@ -53,7 +53,7 @@ Why this program is important:
 Program:
 public class ThrowExample1 {
     public static void main(String[] args) {
-        int age = 15;
+        int age  15;
 
         if (age < 18) {
             throw new ArithmeticException("You are not eligible to vote.");
@@ -70,7 +70,7 @@ Line 1: public class ThrowExample1 {
 Line 2:     public static void main(String[] args) {
 - Starts the main method.
 
-Line 3:         int age = 15;
+Line 3:         int age  15;
 - Declares age with a value of 15.
 
 Line 4:
@@ -100,7 +100,7 @@ Line 11: }
 Comments for every line:
 public class ThrowExample1 {   // Declares the class
     public static void main(String[] args) {   // Program starts here
-        int age = 15;   // Sets age value
+        int age  15;   // Sets age value
 
         if (age < 18) {   // Checks if age is below 18
             throw new ArithmeticException("You are not eligible to vote.");   // Manually throws exception
@@ -116,9 +116,9 @@ Exception in thread "main" java.lang.ArithmeticException: You are not eligible t
 Summary:
 This program shows how throw is used to manually raise an exception when a condition fails.
 
-============================================================
+
 5. Program 2: Using throw with try-catch
-============================================================
+
 Headline:
 Handling a Manually Thrown Exception
 
@@ -134,7 +134,7 @@ Program:
 public class ThrowExample2 {
     public static void main(String[] args) {
         try {
-            int number = -5;
+            int number  -5;
 
             if (number < 0) {
                 throw new IllegalArgumentException("Number cannot be negative.");
@@ -156,7 +156,7 @@ Comments for every line:
 public class ThrowExample2 {   // Declares class
     public static void main(String[] args) {   // Entry point
         try {   // Begins risky code block
-            int number = -5;   // Sets negative value
+            int number  -5;   // Sets negative value
 
             if (number < 0) {   // Checks if number is negative
                 throw new IllegalArgumentException("Number cannot be negative.");   // Throws exception manually
@@ -175,9 +175,9 @@ Error: Number cannot be negative.
 Summary:
 This program shows how throw can be used together with try-catch to handle user-defined error situations.
 
-============================================================
+
 6. Important Points About throw
-============================================================
+
 - throw is used to manually raise an exception.
 - You must create an exception object before using throw.
 - throw is followed by new ExceptionType(...).
@@ -186,7 +186,7 @@ This program shows how throw can be used together with try-catch to handle user-
 
 ------------------------------------------------------------
 7. Conclusion
-============================================================
+
 The throw keyword is an important part of Java exception handling.
 It allows programmers to create and raise exceptions manually when special conditions occur.
 Using throw correctly helps make programs more reliable, controlled, and easier to debug.
