@@ -1,8 +1,8 @@
-12 - Exception Hierarchy in Java
+# 12 - Exception Hierarchy in Java
 
-============================================================
+
 1. Introduction
-============================================================
+
 Java exceptions are organized in a hierarchy.
 At the top is the Throwable class.
 All exception and error classes inherit from it.
@@ -47,12 +47,12 @@ Exception:
 
 ------------------------------------------------------------
 5. Example Program
-============================================================
+
 Program:
 public class ExceptionHierarchyExample {
     public static void main(String[] args) {
         try {
-            int result = 10 / 0;
+            int result  10 / 0;
             System.out.println(result);
         } catch (ArithmeticException e) {
             System.out.println("Caught ArithmeticException");
@@ -78,6 +78,6 @@ Caught ArithmeticException
 
 ------------------------------------------------------------
 7. Conclusion
-============================================================
+
 The Java exception hierarchy helps in understanding how different errors are related.
 It shows why some exceptions are checked, some are unchecked, and why some problems are serious enough to be treated as errors.
