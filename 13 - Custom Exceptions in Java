@@ -1,40 +1,46 @@
 # 13 - Custom Exceptions in Java
 
-1. Introduction
+## 1. Introduction
 
 A custom exception is an exception created by the programmer.
 It is used when built-in exceptions do not clearly describe a specific problem in the program.
 
-------------------------------------------------------------
-2. Why Use Custom Exceptions?
-------------------------------------------------------------
-- To represent application-specific errors
-- To make error messages clearer
-- To improve code readability
-- To handle business logic problems more accurately
+## 2. Why Use Custom Exceptions?
 
-Example:
+* To represent application-specific errors
+* To make error messages clearer
+* To improve code readability
+* To handle business logic problems more accurately
+
+**Example:**
 If a bank app rejects a transaction because the balance is too low, a custom exception can describe that situation clearly.
 
-------------------------------------------------------------
-3. How to Create a Custom Exception
-------------------------------------------------------------
-A custom exception is usually created by extending the Exception class.
+## 3. How to Create a Custom Exception
 
-Syntax:
+A custom exception is usually created by extending the `Exception` class.
+
+### Syntax:
+
+```java
 class MyException extends Exception {
     MyException(String message) {
         super(message);
     }
 }
 
-------------------------------------------------------------
-4. Program Example
+```
 
-Headline:
+## 4. Program Example
+
+### Headline:
+
 Creating and Using a Custom Exception
 
-Program:
+### Program:
+
+> **Note:** The program code provided is structured correctly.
+
+```java
 class InvalidAgeException extends Exception {
     InvalidAgeException(String message) {
         super(message);
@@ -59,24 +65,29 @@ public class CustomExceptionExample {
     }
 }
 
-Line-by-line explanation:
-- InvalidAgeException is a custom checked exception.
-- validateAge() throws this exception if age is less than 18.
-- main() catches the exception and prints the message.
+```
 
-Output:
+### Line-by-line explanation:
+
+* `InvalidAgeException` is a custom checked exception.
+* `validateAge()` throws this exception if age is less than 18.
+* `main()` catches the exception and prints the message.
+
+### Output:
+
+```
 Exception caught: Age must be 18 or above.
 
-------------------------------------------------------------
-5. Important Points
-------------------------------------------------------------
-- Custom exceptions are useful for application-specific errors.
-- They should extend Exception for checked exceptions.
-- They can also extend RuntimeException if you want unchecked behavior.
-- Always provide a meaningful message.
+```
 
-------------------------------------------------------------
-6. Conclusion
+## 5. Important Points
+
+* Custom exceptions are useful for application-specific errors.
+* They should extend `Exception` for checked exceptions.
+* They can also extend `RuntimeException` if you want unchecked behavior.
+* Always provide a meaningful message.
+
+## 6. Conclusion
 
 Custom exceptions help make Java programs more expressive and easier to understand.
 They allow developers to describe problems in a way that matches the business logic of the application.
