@@ -1,20 +1,20 @@
-# 03 - Exception Handling Introduction in Java
+# Exception Handling Introduction in Java
 
-What is Exception Handling?
+## What is Exception Handling?
 - Exception handling is a way to handle runtime errors so that the program does not stop unexpectedly.
 - It helps in making the program more reliable and user-friendly.
 
-Why do we need it?
+## Why do we need it?
 - To avoid program crash
 - To display meaningful messages
 - To continue execution after an error
 
-Basic Idea
+## Basic Idea
 - Code that may fail is placed inside try block.
 - If failure occurs, the catch block handles it.
 - The finally block runs regardless of success or failure.
 
-Syntax
+## Syntax
 try {
     // risky code
 } catch (ExceptionType e) {
@@ -23,7 +23,7 @@ try {
     // cleanup code
 }
 
-Example
+## Example
 public class ExceptionHandlingIntro {
     public static void main(String[] args) {
         try {
@@ -39,11 +39,11 @@ public class ExceptionHandlingIntro {
     }
 }
 
-Important Points
+## Important Points
 - A single try block can have multiple catch blocks.
 - finally is optional but useful for cleanup.
 - catch blocks must be ordered from specific to general.
 
-Summary
+## Summary
 - Exception handling allows a program to respond to errors in a controlled way.
 - try, catch, and finally are the main tools used for this.
