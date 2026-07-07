@@ -1,4 +1,4 @@
-# 02 - Exception vs Error in Java
+# Exception vs Error in Java
 
 ## 1. Exception
 - An exception is a problem that occurs during program execution.
