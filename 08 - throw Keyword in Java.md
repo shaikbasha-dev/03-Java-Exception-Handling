@@ -1,4 +1,4 @@
-# 08 - throw Keyword in Java
+# throw Keyword in Java
 
 ## 1. Definition
 
@@ -85,44 +85,26 @@ public class ThrowExample1 {
 
 * **Line 1: public class ThrowExample1 {**
 * Declares the class.
-
-
 * **Line 2: public static void main(String[] args) {**
 * Starts the main method.
-
-
 * **Line 3: int age = 15;**
 * Declares age and initializes it with a value of 15 using the assignment operator (`=`).
-
-
 * **Line 4:** * Blank line for readability.
 * **Line 5: if (age < 18) {**
 * Checks whether the age is less than 18.
-
-
 * **Line 6: throw new ArithmeticException("You are not eligible to vote.");**
 * Throws an exception manually because the condition is true.
-
-
 * **Line 7: }**
 * Ends the if block.
-
-
 * **Line 8:** * Blank line.
 * **Line 9: System.out.println("You are eligible to vote.");**
 * This line will not execute if the exception is thrown.
-
-
 * **Line 10: }**
 * Ends the main method.
-
-
 * **Line 11: }**
 * Ends the class.
 
-
-
-### Comments for every line:
+### Comments for every line of code:
 
 ```java
 public class ThrowExample1 {   // Declares the class
@@ -240,3 +222,7 @@ This program shows how `throw` can be used together with try-catch to handle use
 The `throw` keyword is an important part of Java exception handling.
 It allows programmers to create and raise exceptions manually when special conditions occur.
 Using `throw` correctly helps make programs more reliable, controlled, and easier to debug.
+
+```
+
+```
