@@ -1,4 +1,4 @@
-# 05 - try-catch Block in Exception Handling in Java
+# try-catch Block in Exception Handling in Java
 
 ## 1. Definition
 
@@ -26,13 +26,15 @@ It allows the programmer to write code that may fail inside the try block and de
 
 ## 3. Pseudocode
 
+
 ```
+
 BEGIN
-    TRY
-        execute risky code
-    CATCH (exception type e)
-        handle the exception
-    END TRY-CATCH
+TRY
+execute risky code
+CATCH (exception type e)
+handle the exception
+END TRY-CATCH
 END
 
 ```
@@ -77,61 +79,37 @@ public class TryCatchExample1 {
 * **Line 1: public class TryCatchExample1 {**
 * Declares a public class named TryCatchExample1.
 * Every Java program must have at least one class.
-
-
 * **Line 2: public static void main(String[] args) {**
 * Defines the main method.
 * This is the starting point of the program.
 * String[] args stores command-line inputs.
-
-
 * **Line 3: int a = 10;**
 * Declares an integer variable a and stores 10.
 * This is the numerator.
-
-
 * **Line 4: int b = 0;**
 * Declares an integer variable b and stores 0.
 * This is the denominator.
-
-
 * **Line 5: try {**
 * Starts a try block.
 * Code inside this block may throw an exception.
-
-
 * **Line 6: int result = a / b;**
 * Tries to divide a by b.
 * Since b is 0, this causes ArithmeticException.
-
-
 * **Line 7: System.out.println("Result: " + result);**
 * Prints the result if division succeeds.
 * This line will not run if the exception occurs.
-
-
 * **Line 8: } catch (ArithmeticException e) {**
 * Starts the catch block.
 * It catches ArithmeticException thrown by the try block.
 * e is the exception object.
-
-
 * **Line 9: System.out.println("Error: Cannot divide by zero.");**
 * Prints a friendly message instead of crashing the program.
-
-
 * **Line 10: }**
 * Ends the catch block.
-
-
 * **Line 11: }**
 * Ends the main method.
-
-
 * **Line 12: }**
 * Ends the class.
-
-
 
 ### Comments for every line of code:
 
@@ -346,3 +324,7 @@ It protects the application from unexpected input and improves interaction quali
 The try-catch block is one of the most important concepts in Java exception handling.
 It allows developers to manage problems safely and keep applications running.
 A good understanding of try-catch is essential for writing professional Java programs.
+
+```
+
+```
