@@ -1,4 +1,4 @@
-# 06 - Multiple Catch Block in Java
+# Multiple Catch Block in Java
 
 ## 1. Definition
 
@@ -25,16 +25,18 @@ It is used when different types of exceptions may occur in the same risky code.
 
 ## 3. Pseudocode
 
+
 ```
+
 BEGIN
-    TRY
-        perform risky operations
-    CATCH (specific exception 1)
-        handle first type
-    CATCH (specific exception 2)
-        handle second type
-    CATCH (general exception)
-        handle remaining cases
+TRY
+perform risky operations
+CATCH (specific exception 1)
+handle first type
+CATCH (specific exception 2)
+handle second type
+CATCH (general exception)
+handle remaining cases
 END
 
 ```
@@ -82,69 +84,37 @@ public class MultipleCatchExample1 {
 
 * **Line 1: public class MultipleCatchExample1 {**
 * Declares the class.
-
-
 * **Line 2: public static void main(String[] args) {**
 * Starts the main method.
-
-
 * **Line 3: try {**
 * Begins the try block.
-
-
 * **Line 4: int a = 10;**
 * Declares a variable a with value 10.
-
-
 * **Line 5: int b = 0;**
 * Declares b with value 0.
-
-
 * **Line 6: int result = a / b;**
 * Attempts division by zero, which throws `ArithmeticException`.
-
-
 * **Line 7: System.out.println(result);**
 * This line will not execute if exception happens.
-
-
 * **Line 8:** * Blank line for readability.
 * **Line 9: int[] numbers = {1, 2, 3};**
 * Creates an array of size 3 using an assignment operator (`=`).
-
-
 * **Line 10: System.out.println(numbers[5]);**
 * This line will not run because the previous exception stops the execution.
-
-
 * **Line 11: } catch (ArithmeticException e) {**
 * Handles division by zero error.
-
-
 * **Line 12: System.out.println("Error: Cannot divide by zero.");**
 * Prints a clear message.
-
-
 * **Line 13: } catch (ArrayIndexOutOfBoundsException e) {**
 * Handles array index problems.
-
-
 * **Line 14: System.out.println("Error: Array index is out of bounds.");**
 * Prints another message.
-
-
 * **Line 15: }**
 * Ends catch blocks.
-
-
 * **Line 16: }**
 * Ends main method.
-
-
 * **Line 17: }**
 * Ends class.
-
-
 
 ### Comments for every line:
 
@@ -291,3 +261,7 @@ It is useful in programs where user input may be invalid or unsafe.
 Multiple catch blocks are useful when a single try block can throw different types of exceptions.
 They allow developers to respond to each problem in a more accurate and professional way.
 Using multiple catch blocks makes Java programs easier to understand, maintain, and debug.
+
+```
+
+```
