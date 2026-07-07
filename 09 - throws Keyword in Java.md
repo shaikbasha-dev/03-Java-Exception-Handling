@@ -1,4 +1,4 @@
-# 09 - throws Keyword in Java
+# throws Keyword in Java
 
 ## 1. Definition
 
