@@ -240,3 +240,7 @@ This example shows that `throws` can list multiple exceptions that a method may 
 The `throws` keyword is important in Java exception handling.
 It informs the caller that a method may cause an exception and that the caller should handle it properly.
 Using `throws` correctly makes Java programs more reliable and easier to understand.
+
+```
+
+```
