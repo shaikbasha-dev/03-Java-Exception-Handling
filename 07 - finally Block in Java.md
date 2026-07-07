@@ -1,4 +1,4 @@
-# 06 - finally Block in Java
+# finally Block in Java
 
 ## 1. Definition
 
@@ -27,14 +27,16 @@ It is usually used for cleanup activities such as closing files, releasing resou
 
 ## 3. Pseudocode
 
+
 ```
+
 BEGIN
-    TRY
-        perform risky task
-    CATCH (exception)
-        handle exception
-    FINALLY
-        cleanup code
+TRY
+perform risky task
+CATCH (exception)
+handle exception
+FINALLY
+cleanup code
 END
 
 ```
@@ -81,60 +83,32 @@ public class FinallyExample1 {
 
 * **Line 1: public class FinallyExample1 {**
 * Declares the class name.
-
-
 * **Line 2: public static void main(String[] args) {**
 * Defines the main method.
-
-
 * **Line 3: try {**
 * Starts the try block.
-
-
 * **Line 4: int a = 10;**
 * Declares variable a and assigns it a value of 10.
-
-
 * **Line 5: int b = 0;**
 * Declares variable b and assigns it a value of 0.
-
-
 * **Line 6: int result = a / b;**
 * Tries to divide by zero, which causes an exception.
-
-
 * **Line 7: System.out.println(result);**
 * This line will not run because the exception occurs first.
-
-
 * **Line 8: } catch (ArithmeticException e) {**
 * Catches the division by zero exception.
-
-
 * **Line 9: System.out.println("Error: Division by zero is not allowed.");**
 * Prints a custom error message.
-
-
 * **Line 10: } finally {**
 * Starts the `finally` block.
-
-
 * **Line 11: System.out.println("This line always executes.");**
 * Prints a message that confirms `finally` runs.
-
-
 * **Line 12: }**
 * Ends the `finally` block.
-
-
 * **Line 13: }**
 * Ends main method.
-
-
 * **Line 14: }**
 * Ends class.
-
-
 
 ### Comments for every line:
 
@@ -351,3 +325,7 @@ It ensures that resources are closed properly, even when exceptions occur.
 
 The `finally` block is one of the most important parts of Java exception handling.
 It guarantees that cleanup code runs, which helps make programs more reliable, professional, and safe.
+
+```
+
+```
