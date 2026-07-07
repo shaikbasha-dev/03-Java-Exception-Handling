@@ -1,4 +1,4 @@
-# 10 - final vs finally vs finalize in Java
+# final vs finally vs finalize in Java
 
 ## 1. Introduction
 
@@ -132,3 +132,7 @@ This is finally block
 * `final` is used for restrictions.
 * `finally` is used for cleanup after exception handling.
 * `finalize` is a method used before object destruction, but it is rarely used today.
+
+```
+
+```
