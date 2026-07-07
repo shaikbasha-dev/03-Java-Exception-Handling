@@ -1,4 +1,4 @@
-# 16 - Exception Handling Interview Questions and Answers in Java
+# Exception Handling Interview Questions and Answers in Java
 
 ---
 
