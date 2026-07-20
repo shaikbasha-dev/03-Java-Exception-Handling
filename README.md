@@ -2116,7 +2116,7 @@ Areas of interest include:
 Stay connected and follow my learning journey.
 
 - GitHub: https://github.com/shaikbasha-dev
-- LinkedIn: https://www.linkedin.com/in/shaik-mahaboob-basha/
+- LinkedIn: https://www.linkedin.com/in/shaikbasha-dev/
 - Email: smbashadev@gmail.com
 
 Feel free to connect for discussions related to Java, Full Stack Development, programming, software engineering, interview preparation, and continuous learning.
